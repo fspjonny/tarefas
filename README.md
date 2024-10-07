@@ -2,9 +2,11 @@
 
 ### Feito com Python🐍 e Flet![](./telas/image.png)
 
+<p align="center">
 <img src="./telas/tela1.png" width="200"/>
 <img src="./telas/tela2.png" width="200"/>
 <img src="./telas/tela3.png" width="200"/>
+</p>
 
 ## 📙Descrição deste Projeto:
 
