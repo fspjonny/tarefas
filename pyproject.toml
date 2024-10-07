@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tarefas"
+version = "0.1.0"
+description = ""
+authors = ["fspjonny"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flet = "^0.24.1"
+
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+run = 'flet -d tarefas/main.py'
+android = 'flet -d --android tarefas/main.py'
+build = "flet build apk tarefas/"
