@@ -4,6 +4,11 @@ from sqlite3 import Error
 import time
 
 
+# Caso o diretório do banco não existir, será criado.
+db_dir = os.path.join(os.path.dirname(__file__), 'db')
+if not os.path.exists(db_dir):
+    os.makedirs(db_dir)
+
 # Caminho usado para armazenar e ler o banco de dados. Pasta 'db' e dentro o arquivo 'dados.db'
 caminho = os.path.join(os.path.dirname(__file__), 'db', 'dados.db')
 
